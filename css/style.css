@@ -149,7 +149,19 @@ input:focus{
     position: relative;
 }
 
-
+.success-reserved{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: block;
+    background: #22bb33;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    
+}
 .thumbnail{
     width: 100%;
     
@@ -165,10 +177,10 @@ input:focus{
 .btn-reserve{
     position: relative;
     width: 100%;
-    background-color: var(--red);
+    background-color: var(--black);
     color: #fff;
+    border: 2px groove var(--black);
     
-    border: none;
     border-radius: 3px;
     padding: 10px;
     margin-top: 2px;
@@ -178,7 +190,8 @@ input:focus{
 }
 .btn-reserve:hover{
    
-    background-color: var(--black);
+    background-color: var(--red);
+    border: 2px groove var(--black)
 
 }
 

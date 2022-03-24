@@ -53,7 +53,15 @@ var app = {
                 
                 self.reserveSong(song);
 
-                
+                const sucessSpan = document.createElement('span');
+                sucessSpan.classList.add('success-reserved');
+
+                sucessSpan.innerHTML = "This song was added to the list."
+                topDiv.appendChild(sucessSpan);
+                setTimeout(function(){
+                    sucessSpan.remove();
+                }, 1500);
+        
             })
 
             topDiv.appendChild(thumnailImg);
@@ -95,6 +103,8 @@ var app = {
         
     
         window.localStorage.setItem('KaraokeList', JSON.stringify(newList));
+
+        
 
 
     },
