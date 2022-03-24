@@ -67,9 +67,17 @@ input:focus{
     
     
 }
-.logo-con img
+
+.logo-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.logo-con svg
 {
-    width:100%;
+   width: 100px;
+   height: 100px;
 }
 
 .search-con{

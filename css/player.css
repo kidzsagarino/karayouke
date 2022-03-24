@@ -18,13 +18,16 @@ body{
 }
 
 .logo-con{
-    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
-.logo-con img
+.logo-con svg
 {
-    width:50%;
+   width: 100px;
+   height: 100px;
 }
-
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
