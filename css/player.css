@@ -1,0 +1,173 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+.header{
+    background-color: #1a1a1a;
+    height: auto;
+    border-bottom: 3px groove var(--red);
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.logo-con{
+    width: 200px;
+}
+.logo-con img
+{
+    width:50%;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--black); 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--black); 
+}
+
+:root{
+    --red: #FF0000;
+    --black: #282828;
+}
+
+.content
+{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    
+    height: 80vh;
+
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    color: #fff;
+    border-bottom: 3px groove var(--red);
+    
+    height: 20%;
+    
+}
+
+.song-status-con{
+    display: grid;
+    
+    
+}
+
+.current-con, .next-con{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    
+}
+.header label{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    align-items: center;
+    
+}
+
+.header span{
+    width: 100%;
+    border: none;
+    display: flex;
+    color: #ed069b;
+    padding: 7px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: center;
+   
+  
+}
+.player-con{
+    height: 100%;
+    padding: 0 10px;
+    
+   
+    
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+   
+}
+.song-list{
+    height: 80vh;
+}
+.song-list-con
+{
+    height: 80vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding:0 10px;
+}
+
+.song{
+    display: grid;
+    grid-template-columns: 100%;
+    
+    color: #1a1a1a;
+    padding: 10px;
+    height: 30px;
+    overflow: hidden;
+
+    
+}
+.current-song{
+    
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.current-song span{
+    display: block;
+    height: 100%;
+
+}
+
+.cancel{
+    border: none;
+    border-radius: 7px;
+    background-color: #d62f2f;
+    position: absolute;
+    width: 80px;
+    padding: 7px;
+    color: #fff;
+    
+    cursor: pointer;
+    opacity: 0.95;
+    font-weight: bold;
+
+}
+
+.cancel:hover{
+    background-color: var(--black);
+}
+
+
+
