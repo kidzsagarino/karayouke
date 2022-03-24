@@ -10,11 +10,11 @@ body{
 }
 .header{
     background-color: #1a1a1a;
-    height: auto;
     border-bottom: 3px groove var(--red);
     margin-bottom: 10px;
     display: grid;
     grid-template-columns: 200px 1fr;
+    color: #fff;
 }
 
 .logo-con{
@@ -57,19 +57,7 @@ body{
 
 }
 
-.header{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 10px;
-    margin-bottom: 10px;
-    background-color: #1a1a1a;
-    padding: 15px;
-    color: #fff;
-    border-bottom: 3px groove var(--red);
-    
-    height: 20%;
-    
-}
+
 
 .song-status-con{
     display: grid;
