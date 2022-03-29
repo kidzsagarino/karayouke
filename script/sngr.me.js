@@ -113,6 +113,7 @@ var app = {
         let songListCon = document.createElement('DIV');
         songListCon.classList.add('class', 'song-list-con');
 
+    
         if(songs.length > 0){
         
             for(let [i, item] of songs.entries()){
@@ -147,7 +148,7 @@ var app = {
                     
                 }
 
-                let span = document.createElement('SPAN');
+                let span = document.createElement('small');
 
                 span.innerHTML = item.title;
 
@@ -161,10 +162,10 @@ var app = {
         }
         else{
            
-            let p = document.createElement('P');
-            p.innerHTML = 'List is empty.';
+            let span = document.createElement('span');
+            span.innerHTML = 'List is empty.';
 
-            songListCon.appendChild(p);
+            songListCon.appendChild(span);
         }
 
         

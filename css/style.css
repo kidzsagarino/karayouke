@@ -269,7 +269,7 @@ input:focus{
 .loader {
     border: 7px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 7px solid var(--red);
+    
     border-bottom: 7px solid var(--black);
     width: 40px;
     height: 40px;
