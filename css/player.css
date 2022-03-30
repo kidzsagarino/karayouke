@@ -242,6 +242,7 @@ iframe{
     padding: 10px;
     border-radius: 30px;
     color: #fff;
+    text-align: center;
 }
 
 @media only screen 
@@ -251,7 +252,17 @@ iframe{
         width: 100%;
     }
     .empty-list-con{
-        width: 80%;   
+        width: 60%;   
+    }
+    .empty-list-con p{
+        font-size: x-large;
+        
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 8px;
+    
     }
   }
   
