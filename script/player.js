@@ -58,8 +58,7 @@ function play(){
 
     if(songs.length === 0)
     {
-        document.querySelector('.player-con').innerHTML = '<p>Player cannot play any song.</p>';
-
+       
         updateSongStatus(songs);
 
         return;

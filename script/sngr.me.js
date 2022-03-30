@@ -162,10 +162,11 @@ var app = {
         }
         else{
            
-            let span = document.createElement('span');
-            span.innerHTML = 'List is empty.';
+            let divEmpty = document.createElement('DIV');
+            divEmpty.classList.add('empty-list-con');
+            divEmpty.innerHTML = '<p>Oppss.. Looks like you have not added songs on the list. </p>';
 
-            songListCon.appendChild(span);
+            document.querySelector('.content').appendChild(divEmpty);
         }
 
         
