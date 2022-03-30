@@ -253,9 +253,12 @@ iframe{
     }
     .empty-list-con{
         width: 60%;   
+        background-color: none;
     }
     .empty-list-con p{
         font-size: x-large;
+        background-color: #fff;
+        color: var(--black)
         
     }
 
