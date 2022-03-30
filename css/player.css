@@ -84,12 +84,12 @@ body{
 
 .links-con{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    right: 0;
+    width: 100%;
     top: 5px;
-    right: 10px;
+    
 }
 .links-con ul{
     list-style-type: none;
@@ -243,3 +243,15 @@ iframe{
     border-radius: 30px;
     color: #fff;
 }
+
+@media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) {
+    .current-con, .next-con{
+        width: 100%;
+    }
+    .empty-list-con{
+        width: 80%;   
+    }
+  }
+  
