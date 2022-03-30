@@ -115,6 +115,9 @@ var app = {
 
     
         if(songs.length > 0){
+            if(document.querySelector('.empty-list-con')){
+                document.querySelector('.empty-list-con').remove();
+            }
         
             for(let [i, item] of songs.entries()){
 

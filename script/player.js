@@ -58,7 +58,7 @@ function play(){
 
     if(songs.length === 0)
     {
-       
+        document.querySelector('.player-con').innerHTML='';
         updateSongStatus(songs);
 
         return;
