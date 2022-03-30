@@ -6,7 +6,7 @@ body{
 
 ::-webkit-scrollbar {
     width: 10px;
-    height: 10px;
+    height: 8px;
 
 }
 .header{
@@ -36,12 +36,12 @@ body{
 
 
 ::-webkit-scrollbar-thumb {
-    background: var(--black); 
+    background: #f3037b; 
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--black); 
+    background: #f3037b; 
 }
 
 :root{
@@ -52,7 +52,7 @@ body{
 .content
 {
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: auto 1fr;
     
     height: 80vh;
 
@@ -62,20 +62,33 @@ body{
 
 .song-status-con{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     
     
 }
 
 .current-con, .next-con{
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-rows: auto 1fr;
+    
+  
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #e5e5e5;
     
 }
 .header label{
     display: flex;
-    justify-content: right;
-    margin-right: 10px;
+    justify-content: center;
+    
     align-items: center;
+    background-color: var(--black);;
+    color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 7px;
+    
     
 }
 
@@ -83,7 +96,7 @@ body{
     width: 100%;
     border: none;
     display: flex;
-    color: #ed069b;
+    color: var(--black);
     padding: 7px;
     border-radius: 5px;
     box-sizing: border-box;
@@ -109,6 +122,7 @@ iframe{
    
     box-sizing: border-box;
     overflow-x: auto;
+    
    
 }
 .song-list-con
@@ -118,7 +132,8 @@ iframe{
     padding:5px;
     white-space: nowrap;
     overflow-x: auto;
-    scrollbar-width: thin;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .song{
@@ -132,9 +147,14 @@ iframe{
 
     
 }
+
+.song small{
+    font-size: 15px;
+}
 .current-song{
     
-    background-color: #e5e5e5;
+    background-color: #e4dede;
+    border-radius: 10px;
     
 }
 
