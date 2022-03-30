@@ -18,7 +18,7 @@ document.querySelector('.search-box').addEventListener('keydown', async function
 });
 
 
-document.querySelector('.player').addEventListener('click', function(){
+document.querySelector('.player-btn').addEventListener('click', function(){
 
   sngr.openPlayer();
 

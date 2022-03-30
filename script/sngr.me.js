@@ -189,13 +189,14 @@ var app = {
         inputCon.classList.add('input-con');
         propmtDIV.appendChild(inputCon);
 
+      
         const input = document.createElement('INPUT');
         input.setAttribute('name', 'input-api-key');
         input.setAttribute('placeholder', 'Paste/Enter Your API Key Here')
 
         const saveAPIBtn = document.createElement('BUTTON');
         saveAPIBtn.classList.add('btn-save-api');
-        saveAPIBtn.innerHTML = 'SAVE';
+        saveAPIBtn.innerHTML = 'GO';
 
         saveAPIBtn.addEventListener('click', function(){
 
@@ -212,21 +213,23 @@ var app = {
             
         });
 
+        const p = document.createElement('P');
+        p.innerHTML = `By clicking Go, you agree to the<a href="termsofservice.html" target="_blank">Terms of Service</a> and<a href="privacypolicy.html" target="_blank">Privacy Policy</a>`;
+
+        
         const requestAnchor = document.createElement('A');
         requestAnchor.setAttribute('href', 'https://forms.gle/JQZcWv78aSY3Mesm6');
-        requestAnchor.innerHTML = "Request An API Key.";
+        requestAnchor.setAttribute('target', '_blank');
+        requestAnchor.classList.add('request-apikey-a');
+        requestAnchor.innerHTML = "Request an API Key";
 
-        const makeAnchor = document.createElement('A');
-
-        makeAnchor.setAttribute('href', 'https://blog.hubspot.com/website/how-to-get-youtube-api-key');
-        makeAnchor.innerHTML = "Get your own API key by enabling Youtube Data API V3 in your google account.";
-
-
+        
 
         inputCon.appendChild(input);
         inputCon.appendChild(saveAPIBtn);
+        inputCon.appendChild(p);
         inputCon.appendChild(requestAnchor);
-        inputCon.appendChild(makeAnchor)
+        
 
         propmtDIV.appendChild(inputCon);
 

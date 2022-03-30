@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Calibri;
     
 }
 ::-webkit-scrollbar {
@@ -48,14 +48,64 @@ input:focus{
     border-bottom: 3px groove var(--red);
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 200px 1fr 200px 200px;
 }
 
 .player-btn-con{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
+
+.player-btn{
+    cursor: pointer;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    width: 150px;
+    background-color: #fff;
+}
+
+.player-btn span{
+    font-size: medium;
+    
+}
+.player-btn:hover{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.links-con{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.links-con ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.links-con a{
+    text-decoration: none;
+    color: var(--red);
+    font-size: medium;
+    
+    
+}
+
+.links-con a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+
 
 .content{
     
@@ -76,7 +126,7 @@ input:focus{
 }
 .logo-con svg
 {
-   width: 100px;
+   width: 65px;
    height: 100px;
 }
 
@@ -102,7 +152,7 @@ input:focus{
 
 
 .btn-search{
-    height: 50px;
+    height: 52px;
     width: 100px;
     font-size: 20px;
     background-color: var(--red);
@@ -173,6 +223,10 @@ input:focus{
     margin-top: 5px;
 }
 
+.title small{
+    font-size: medium;
+}
+
 
 .btn-reserve{
     position: relative;
@@ -213,18 +267,22 @@ input:focus{
     width: 60%;
     height: 100%;
    
-    padding: 10px;
-    margin: 10px;
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    ;
     
     
 
 }
 
-.api-key-con input{
-    width: 100%;
+.input-con p{
+    color: #fff;
+    margin: 0 10px;
+    text-align: center;
+    
 }
 .api-key-con button{
     width: 150px;
@@ -232,17 +290,22 @@ input:focus{
     background-color: var(--red);
     color: #fff;
     cursor: pointer;
-    border-radius: 10px;
-
+    font-size: 20px;
+    height: 52px;
 }
-   
+
+.api-key-con button:hover{
+    color: var(--black)
+}
   
-.api-key-con input, .api-key-con button{
+.api-key-con input{
 
     height: 50px;
-    padding: 10px;
+    padding-left: 10px;
     font-size: 18px;
-    margin: 5px
+    
+    border: none;
+    width: 100%;
 
 }
 
@@ -250,12 +313,32 @@ input:focus{
     text-decoration: underline;
     color: #f1f1f1;
     margin: 10px;
+   
 }
+
 
 .api-key-con a:hover{
     text-decoration: none;
-    color: var(--red);
+    color: var(--red) !important;
+   
 }
+
+.request-apikey-a {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #1a1a1a;
+
+}   
+.request-apikey-a:hover{
+    border: 2px solid #fff !important;
+}
+
 .loader-con{
     width: 100%;
     height: 100vh;
