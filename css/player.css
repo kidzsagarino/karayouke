@@ -247,13 +247,13 @@ iframe{
 
 @media only screen 
   and (min-device-width : 768px) 
-  and (max-device-width : 1024px) {
+  and (max-device-width : 1400px) {
     .current-con, .next-con{
         width: 100%;
     }
     .empty-list-con{
         width: 60%;   
-        background-color: none;
+      
     }
     .empty-list-con p{
         font-size: x-large;
