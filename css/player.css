@@ -84,12 +84,12 @@ body{
 
 .links-con{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    right: 0;
+    width: 100%;
     top: 5px;
-    right: 10px;
+    
 }
 .links-con ul{
     list-style-type: none;
@@ -242,4 +242,30 @@ iframe{
     padding: 10px;
     border-radius: 30px;
     color: #fff;
+    text-align: center;
 }
+
+@media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1400px) {
+    .current-con, .next-con{
+        width: 100%;
+    }
+    .empty-list-con{
+        width: 60%;   
+      
+    }
+    .empty-list-con p{
+        font-size: x-large;
+        background-color: #fff;
+        color: var(--black)
+        
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 8px;
+    
+    }
+  }
+  
