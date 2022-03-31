@@ -65,8 +65,9 @@ function play(){
 
     }
 
+    //console.log(player);
 
-    document.querySelector('.player-con').innerHTML = `<iframe src="https://www.youtube.com/embed/${songs[0].id}?autoplay=1&mute=0&start=0&controls=0" allow="autoplay"></iframe>`;
+    document.querySelector('.player-con').innerHTML = `<iframe src="https://www.youtube.com/embed/${songs[0].id}?autoplay=1&mute=0&start=0" allow="autoplay"></iframe>`;
     
     updateSongStatus(songs);
     
@@ -74,6 +75,8 @@ function play(){
     
     
 }
+
+
 
 function nextSong(){
 
