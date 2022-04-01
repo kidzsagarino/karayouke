@@ -2,7 +2,7 @@ import apihelper from "./apihelper.js";
 
 var app = {
     
-    resultify: async function(data){
+    resultify: async function(data, callback){
         var self = this;
         
         const rowDiv = document.createElement('DIV');
@@ -61,6 +61,8 @@ var app = {
                 setTimeout(function(){
                     sucessSpan.remove();
                 }, 1500);
+
+                callback();
         
             })
 
@@ -249,7 +251,9 @@ var app = {
         loader.classList.add('loader');
 
         loaderCon.appendChild(loader);
-        document.querySelector('.content').appendChild(loaderCon);
+
+        return loaderCon;
+        
 
         
     },

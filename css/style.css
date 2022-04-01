@@ -36,7 +36,7 @@ input:focus{
 
 .row{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     padding: 0;
     margin: 0;
@@ -50,6 +50,7 @@ input:focus{
     display: grid;
     grid-template-columns: 200px 1fr 200px;
 }
+
 
 .player-btn-con{
     display: flex;
@@ -383,9 +384,12 @@ input:focus{
 
   @media only screen 
   and (min-device-width : 768px) 
-  and (max-device-width : 1024px) {
+  and (max-device-width : 1400px) {
     .current-con, .next-con{
         width: 100%;
+    }
+    .row {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
   
