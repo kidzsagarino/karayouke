@@ -49,6 +49,7 @@ input:focus{
     margin-bottom: 10px;
     display: grid;
     grid-template-columns: 200px 1fr 200px;
+    height: 130px;
 }
 
 
@@ -88,7 +89,7 @@ input:focus{
     align-items: center;
     position: absolute;
     width: 100%;
-    top: 5px;
+    top: 10px;
     
 }
 .links-con ul{

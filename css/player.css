@@ -35,8 +35,9 @@ body{
     
     display: grid;
     grid-template-columns: 200px 1fr;
-    height: auto;
+    height: 130px;
     color: #fff;
+
 }
 
 .header label{
@@ -57,45 +58,55 @@ body{
 .close-con{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .close-con button{
-    padding: 5px;
+    
     background: none;
     border: none;
     cursor: pointer;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .close-con svg{
-  fill: #282828;
+  fill: #fff;
 }
 
 .search-box{
     position: absolute;
     width: 0;
-    height: 100%;
+    height: 130px;
     background-color: #fff;
     z-index: 1;
     border-right: 1px solid #e4dede;
     top: 0;
     overflow-y: auto;
     transition: width 2s ease-in;
+    display: grid;
+    grid-template-columns: 50px 200px 1fr;
+    box-sizing: border-box;
+    border-bottom: 1px groove var(--black);
+    background-color: var(--black);
+    
     
 }
 .search-box-transition{
-    width: 20%;
+    width: 100%;
 }
 
 .input-con{
     width: 100%;
     margin: 0;
-    padding: 10px 5px;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .input-con input{
@@ -137,24 +148,29 @@ body{
     padding: 0 5px;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .search-result-container p {
-    color: #555;
+    color: #fff;
     text-align: center;
     margin: 5px;
 }
 .row{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 5px;
     padding: 0;
     margin: 0;
+    align-items: center;
+    height: 100%;
 }
 
 
 .result {
     margin: 0;
-    margin-bottom: 10px;
+
     width: 100%;
 }
 
@@ -164,15 +180,17 @@ body{
 
 .thumbnail{
     width: 100%;
-    height: 100px;
+    height: 50px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
 }
 
 .btn-reserve {
     position: relative;
     width: 100%;
-    background-color: var(--black);
-    color: #fff;
-    border: 2px groove var(--black);
+    background-color: #fff;
+    color: var(--black);
+    border: 2px groove #fff;
     border-radius: 3px;
     padding: 10px;
     margin-top: 2px;
@@ -184,7 +202,8 @@ body{
 
 .btn-reserve:hover {
     background-color: var(--red);
-    border: 2px groove var(--black);
+    border: 2px groove #fff;
+    color: #fff
 }
 
 .title {
@@ -194,7 +213,7 @@ body{
 
 .success-reserved{
     position: absolute;
-    top: 25px;
+    top: 0px;
     left: 0;
     display: block;
     background: #22bb33;
@@ -204,6 +223,8 @@ body{
     text-align: center;
     color: #fff;
     font-size: 14px;
+    height: 100%;
+    
     
 }
 

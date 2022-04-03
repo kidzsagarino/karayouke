@@ -19,7 +19,7 @@ var app = {
             const videoID = item.id.videoId;
             const thumnail = item.snippet.thumbnails.medium.url;
             const title = item.snippet.title;
-
+            
            
             const videoDetails = await apihelper.video(videoID);
           
@@ -33,6 +33,7 @@ var app = {
 
             const thumnailImg = document.createElement('IMG');
             thumnailImg.setAttribute('src', thumnail);
+            thumnailImg.setAttribute('title', title);
             thumnailImg.classList.add('thumbnail')
 
             const buttonReserve = document.createElement('BUTTON');
@@ -41,7 +42,7 @@ var app = {
             buttonReserve.setAttribute('data-id', videoID);
             buttonReserve.setAttribute('data-title', title);
             buttonReserve.setAttribute('data-duration', videoDuration);
-            buttonReserve.innerHTML = 'RESERVE THIS SONG';
+            buttonReserve.innerHTML = 'RESERVE';
 
             buttonReserve.addEventListener('click', function(e){
                 let song = {
@@ -70,15 +71,7 @@ var app = {
             topDiv.appendChild(buttonReserve);
             resultDiv.appendChild(topDiv);
 
-            const pTitle = document.createElement('P');
-            pTitle.classList.add('title');
-
-            const smallTitle = document.createElement('small');
-            smallTitle.innerHTML = title;
-
-            pTitle.appendChild(smallTitle);
-
-            resultDiv.appendChild(pTitle);
+           
           
             rowDiv.appendChild(resultDiv);
 
