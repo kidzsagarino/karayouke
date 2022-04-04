@@ -57,9 +57,7 @@ body{
 
 .close-con{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px 0;
     
 }
 
@@ -102,11 +100,11 @@ body{
 .input-con{
     width: 100%;
     margin: 0;
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
-    justify-content: center;
+    
     box-sizing: border-box;
-    align-items: center;
+   
 }
 
 .input-con input{
@@ -163,8 +161,9 @@ body{
     column-gap: 5px;
     padding: 0;
     margin: 0;
-    align-items: center;
+    
     height: 100%;
+    
 }
 
 
@@ -180,30 +179,38 @@ body{
 
 .thumbnail{
     width: 100%;
-    height: 50px;
-    border: 1px solid #fff;
+    height: 90px;
+    border: 2px solid #696666;
     box-sizing: border-box;
+    border-radius: 5px;
+    margin: 15px 0;
 }
 
 .btn-reserve {
-    position: relative;
-    width: 100%;
-    background-color: #fff;
-    color: var(--black);
-    border: 2px groove #fff;
-    border-radius: 3px;
-    padding: 10px;
-    margin-top: 2px;
+    position: absolute;
+    width: 40px;
+    background-color: var(--black);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 5px;
+
     font-size: 12px;
     cursor: pointer;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
 }
 
 
 
 .btn-reserve:hover {
-    background-color: var(--red);
+    background-color: var(--black);
     border: 2px groove #fff;
-    color: #fff
+    color: #fff;
+    opacity: 1;
 }
 
 .title {
@@ -213,9 +220,9 @@ body{
 
 .success-reserved{
     position: absolute;
-    top: 0px;
-    left: 0;
-    display: block;
+    
+    display: flex;
+    align-items: center;
     background: #22bb33;
     width: 100%;
     padding: 10px;
@@ -223,7 +230,9 @@ body{
     text-align: center;
     color: #fff;
     font-size: 14px;
-    height: 100%;
+    height: auto;
+    top: 0;
+    border-radius: 5px;
     
     
 }
