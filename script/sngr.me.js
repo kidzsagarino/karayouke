@@ -12,6 +12,7 @@ var app = {
             return rowDiv;
         }
 
+        console.log(data);
        
 
         for(let item of data.items){
@@ -22,7 +23,7 @@ var app = {
             
            
             const videoDetails = await apihelper.video(videoID);
-          
+
             const videoDuration = await videoDetails.items[0].contentDetails.duration;
 
             const resultDiv = document.createElement('DIV');
@@ -46,10 +47,11 @@ var app = {
 
             buttonReserve.addEventListener('click', function(e){
                 let song = {
-                    id: e.target.getAttribute('data-id'),
-                    title: e.target.getAttribute('data-title'),
-                    duration: e.target.getAttribute('data-duration')
+                    id: e.currentTarget.getAttribute('data-id'),
+                    title: e.currentTarget.getAttribute('data-title'),
+                    duration: e.currentTarget.getAttribute('data-duration')
                 }
+                
                 
                 
                 self.reserveSong(song);
