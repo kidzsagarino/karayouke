@@ -407,6 +407,14 @@ iframe{
     
 }
 
+.api-key-con .input-con{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .api-key-con button{
     width: 150px;
     border: none;
@@ -439,6 +447,11 @@ iframe{
    
 }
 
+.api-key-con p{
+    color: #fff;
+    margin: 0 10px;
+    text-align: center;
+}
 
 .api-key-con a:hover{
     text-decoration: none;
