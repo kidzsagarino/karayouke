@@ -3,6 +3,9 @@ body{
     margin: 0;
     font-family: Calibri;
 }
+*{
+    box-sizing: border-box;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -57,7 +60,8 @@ body{
 
 .close-con{
     width: 100%;
-    padding: 15px 0;
+    margin-top: 10px;
+    margin-left: 10px;
     
 }
 
@@ -68,6 +72,7 @@ body{
     cursor: pointer;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
     
 }
 
@@ -77,8 +82,8 @@ body{
 
 .search-box{
     position: absolute;
-    width: 0;
-    height: 130px;
+    width: 100%;
+    height: 190px;
     background-color: #fff;
     z-index: 1;
     border-right: 1px solid #e4dede;
@@ -86,8 +91,7 @@ body{
     overflow-y: auto;
     transition: width 2s ease-in;
     display: grid;
-    grid-template-columns: 50px 200px 1fr;
-    box-sizing: border-box;
+    grid-template-rows: 50px 1fr;
     border-bottom: 1px groove var(--black);
     background-color: var(--black);
     
@@ -97,13 +101,21 @@ body{
     width: 100%;
 }
 
-.input-con{
-    width: 100%;
-    margin: 0;
-    padding: 15px 0;
-    display: flex;
+.controls-top{
+    display: grid;
+    grid-template-columns: 50px 1fr;
     
-    box-sizing: border-box;
+}
+.controls-bottom{
+    margin-top: 10px;
+}
+.input-con{
+    width: 70%;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-self: center;
+
    
 }
 
@@ -145,10 +157,11 @@ body{
 .search-result-container{
     padding: 0 5px;
     width: 100%;
-    box-sizing: border-box;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .search-result-container p {
     color: #fff;
@@ -174,43 +187,50 @@ body{
 }
 
 .top {
-    position: relative;
+    
+ text-align: center;
+
 }
 
 .thumbnail{
     width: 100%;
-    height: 90px;
-    border: 2px solid #696666;
-    box-sizing: border-box;
+    height: 80px;
+    
+
     border-radius: 5px;
-    margin: 15px 0;
+    box-shadow: rgba(40, 40, 40, 0.35) 0px 5px 5px;
+    
+}
+
+.thumbnail:hover{
+    box-shadow: #e4e4e4 0px 4px 12px;
 }
 
 .btn-reserve {
-    position: absolute;
-    width: 40px;
-    background-color: var(--black);
-    color: #fff;
+    
+    width: 90%;
+    height: 30px;
+    background-color: #fff;
+    color: var(--black);
     border: 2px solid #fff;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 5px;
-
     font-size: 12px;
     cursor: pointer;
     z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     opacity: 0.8;
+    margin-top: 5px;
+    pointer-events: all;
 }
 
 
 
-.btn-reserve:hover {
-    background-color: var(--black);
-    border: 2px groove #fff;
-    color: #fff;
+.btn-reserve:hover, .success-reserved {
+    background-color: #e4dede;
+    border: 2px solid #e4dede;
+    color: var(--black);
     opacity: 1;
+    box-shadow: #e4e4e4 0px 1px 5px;
 }
 
 .title {
@@ -219,22 +239,12 @@ body{
 }
 
 .success-reserved{
-    position: absolute;
-    
-    display: flex;
-    align-items: center;
+  
     background: #22bb33;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
+    border: 2px solid #22bb33;
     color: #fff;
-    font-size: 14px;
-    height: auto;
-    top: 0;
-    border-radius: 5px;
-    
-    
+    pointer-events: none;
+
 }
 
 .header span{
@@ -244,7 +254,7 @@ body{
     background-color: var(--black);
     padding: 10px;
 
-    box-sizing: border-box;
+ 
     justify-content: left;
     align-items: center;
     height: 50px;
@@ -349,7 +359,7 @@ iframe{
 .song-list{
     height: 100%;
    
-    box-sizing: border-box;
+  
     overflow-x: auto;
     
    
@@ -371,7 +381,7 @@ iframe{
     padding: 10px;
     
     overflow: hidden;
-    box-sizing: border-box;
+ 
 
     
 }
